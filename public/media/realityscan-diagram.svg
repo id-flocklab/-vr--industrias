@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0d0d0d"/>
+
+  <!-- capture stage: real-world structure surrounded by camera angles -->
+  <g stroke="#5c5c59" stroke-width="1.5" stroke-dasharray="3 4">
+    <line x1="200" y1="95" x2="62" y2="118"/>
+    <line x1="200" y1="95" x2="112" y2="52"/>
+    <line x1="200" y1="95" x2="200" y2="30"/>
+    <line x1="200" y1="95" x2="288" y2="52"/>
+    <line x1="200" y1="95" x2="338" y2="118"/>
+  </g>
+
+  <!-- the real structure (a simple industrial tank), capture stage -->
+  <g stroke="#f4f3ef" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M176,120 V78 a24,10 0 0 1 48,0 V120 Z"/>
+    <ellipse cx="200" cy="78" rx="24" ry="10"/>
+  </g>
+
+  <!-- camera glyphs around the arc -->
+  <g fill="#f4f3ef">
+    <g transform="translate(62,118)"><rect x="-11" y="-8" width="22" height="16" rx="3"/><circle cx="0" cy="0" r="4" fill="#0d0d0d"/></g>
+    <g transform="translate(112,52)"><rect x="-11" y="-8" width="22" height="16" rx="3"/><circle cx="0" cy="0" r="4" fill="#0d0d0d"/></g>
+    <g transform="translate(200,30)"><rect x="-11" y="-8" width="22" height="16" rx="3"/><circle cx="0" cy="0" r="4" fill="#0d0d0d"/></g>
+    <g transform="translate(288,52)"><rect x="-11" y="-8" width="22" height="16" rx="3"/><circle cx="0" cy="0" r="4" fill="#0d0d0d"/></g>
+    <g transform="translate(338,118)"><rect x="-11" y="-8" width="22" height="16" rx="3"/><circle cx="0" cy="0" r="4" fill="#0d0d0d"/></g>
+  </g>
+
+  <text x="200" y="152" text-anchor="middle" fill="#9a9a97" font-family="Poppins, sans-serif" font-size="12" letter-spacing="0.5">captura fotogr&#225;fica del lugar real</text>
+
+  <!-- process arrow -->
+  <line x1="200" y1="172" x2="200" y2="222" stroke="#5c5c59" stroke-width="2"/>
+  <path d="M191,213 L200,224 L209,213" fill="none" stroke="#5c5c59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="202" text-anchor="middle" fill="#f4f3ef" font-family="Poppins, sans-serif" font-size="13" font-weight="600" letter-spacing="0.3">RealityScan</text>
+
+  <!-- reconstructed mesh -->
+  <g stroke="#f4f3ef" stroke-width="1.6" fill="none" stroke-linejoin="round">
+    <path d="M172,340 V285 a28,11 0 0 1 56,0 V340 Z"/>
+    <ellipse cx="200" cy="285" rx="28" ry="11"/>
+    <!-- facets -->
+    <line x1="172" y1="340" x2="200" y2="296"/>
+    <line x1="200" y1="296" x2="228" y2="340"/>
+    <line x1="200" y1="296" x2="200" y2="340"/>
+    <line x1="172" y1="313" x2="228" y2="313"/>
+    <line x1="172" y1="285" x2="228" y2="285"/>
+  </g>
+  <g fill="#f4f3ef">
+    <circle cx="172" cy="340" r="2.5"/>
+    <circle cx="228" cy="340" r="2.5"/>
+    <circle cx="200" cy="340" r="2.5"/>
+    <circle cx="172" cy="313" r="2.5"/>
+    <circle cx="228" cy="313" r="2.5"/>
+    <circle cx="200" cy="296" r="2.5"/>
+    <circle cx="172" cy="285" r="2.5"/>
+    <circle cx="228" cy="285" r="2.5"/>
+  </g>
+
+  <text x="200" y="372" text-anchor="middle" fill="#9a9a97" font-family="Poppins, sans-serif" font-size="12" letter-spacing="0.5">modelo 3D fiel al lugar real</text>
+</svg>

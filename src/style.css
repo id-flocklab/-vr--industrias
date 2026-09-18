@@ -170,7 +170,8 @@
     overflow:hidden;
     background:var(--bg-raise);
   }
-  .media-card video{
+  .media-card video,
+  .media-card img{
     width:100%; height:100%;
     object-fit:cover;
     display:block;
